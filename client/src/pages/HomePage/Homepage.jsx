@@ -30,7 +30,7 @@ const Homepage = () => {
             <h1>SOPORTE</h1>
           </div>
           <div className="flex flex-col items-center justify-between ">
-            <img src={servicio1} className="w-32"></img>
+            <img src={servicio1} className="w-32 "></img>
             <h1>INCREMENTO DE VENTAS</h1>
           </div>
         </div>
