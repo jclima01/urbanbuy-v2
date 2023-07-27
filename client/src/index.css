@@ -10,10 +10,16 @@
     @apply text-[#FFFFFF] bg-transparent border-b-2 px-4 py-1 rounded-md shrink-0 text-center;
   }
   .customBackground {
-    background-image: url('./assets/image1.svg');
-    background-size: cover;
+    background: no-repeat center url('./assets/image1.svg');
     opacity: .55;
     width: 100%;
-    height: 100%;
+    height: 473px;
+    object-fit: contain;
+  }
+  .customBackground2 {
+    background: no-repeat center url('./assets/image2.svg');
+    width: 100%;
+    height: 473px;
+    object-fit: contain;
   }
 }
