@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .primaryButton {
+    @apply text-[#FFFFFF] bg-[#B26E07] px-4 py-1 rounded-md shrink-0 text-center;
+  }
+  .secondaryButton {
+    @apply text-[#FFFFFF] bg-transparent border-b-2 px-4 py-1 rounded-md shrink-0 text-center;
+  }
+  .customBackground {
+    background-image: url('./assets/image1.svg');
+    background-size: cover;
+    opacity: .55;
+    width: 100%;
+    height: 100%;
+  }
+}
