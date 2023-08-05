@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import logo from "../../../assets/logo.svg";
 import { CiHome, CiUser, CiEdit, CiPenpot, CiSettings } from "react-icons/ci";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { RiLogoutCircleRLine } from "react-icons/ri";
