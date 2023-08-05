@@ -4,22 +4,22 @@
 
 @layer utilities {
   .primaryButton {
-    @apply text-[#FFFFFF] bg-[#B26E07] px-4 py-1 rounded-md shrink-0 text-center;
+    @apply text-[#FFFFFF] bg-[#B26E07] px-4 py-1 rounded-md shrink-0 text-center w-fit;
   }
   .secondaryButton {
-    @apply text-[#FFFFFF] bg-transparent border-b-2 px-4 py-1 rounded-md shrink-0 text-center;
+    @apply text-[#FFFFFF] bg-[transparent] border-b-2 px-4 py-1 rounded-md shrink-0 text-center w-fit;
+  }
+  .loginButton {
+    @apply text-[#FFFFFF] bg-[#939F88] border-b-2 px-4 py-1 rounded-md shrink-0 text-center w-fit;
   }
   .customBackground {
     background: no-repeat center url('./assets/image1.svg');
-    opacity: .55;
     width: 100%;
-    height: 473px;
-    object-fit: contain;
+    height: 400px;
   }
   .customBackground2 {
     background: no-repeat center url('./assets/image2.svg');
     width: 100%;
-    height: 473px;
-    object-fit: contain;
+    height: 400px;
   }
 }
