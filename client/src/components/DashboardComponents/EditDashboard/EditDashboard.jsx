@@ -2,7 +2,10 @@ import React from 'react'
 
 const EditDashboard = () => {
   return (
-    <div>EditDashboard</div>
+    <div className='w-full h-full pt-[133px]'>
+    Edit Dashboard
+
+  </div>
   )
 }
 

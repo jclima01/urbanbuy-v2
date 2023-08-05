@@ -3,17 +3,20 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Homepage from "./pages/HomePage/Homepage";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Login from "./pages/Login/Login";
+import Singin from "./pages/Singin/Singin";
 function App() {
   const { pathname } = useLocation();
   return (
-    <div className="w-screen h-full flex justify-between items-center bg-[#1E1E1E] flex-col text-gray-300 font-sans">
-      {pathname!=="/dashboard" && <NavHomePage />}
+    <div className="w-full h-full flex justify-between items-center flex-col text-gray-300 font-sans">
+      {pathname !== "/dashboard" &&
+        pathname !== "/login" &&
+        pathname !== "/singin" && <NavHomePage />}
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/singin" element={<Singin />}></Route>
       </Routes>
-      
     </div>
   );
 }
