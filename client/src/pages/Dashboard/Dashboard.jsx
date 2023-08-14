@@ -23,11 +23,11 @@ const Dashboard = () => {
           handleIsActiveHover={handleIsActiveHover}
         />
         {isActive === "Home" && <HomeDashboard />}
-        {isActive === "User" && <UsersDashboard />}
-        {isActive === "Edit" && <EditDashboard />}
+        {/* {isActive === "User" && <UsersDashboard />} */}
+        {/* {isActive === "Edit" && <EditDashboard />} */}
         {isActive === "Products" && <ProductsDashboard />}
-        {isActive === "Shipping" && <ShippingDashboard />}
-        {isActive === "Settings" && <SettingsDashboard />}
+        {/* {isActive === "Shipping" && <ShippingDashboard />} */}
+        {/* {isActive === "Settings" && <SettingsDashboard />} */}
       </main>
     </div>
   );
