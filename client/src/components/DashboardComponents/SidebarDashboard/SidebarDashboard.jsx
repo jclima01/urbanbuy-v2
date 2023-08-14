@@ -17,39 +17,39 @@ const SideBarDashBoard = ({ isActive, handleIsActiveHover }) => {
         <li
           onClick={() => handleIsActiveHover("Home")}
           className={`${
-            isActive === "Home" ? "primaryButton" : "secondaryButton"
+            isActive === "Home" ? "selectedSidebarButton" : "sidebarButton"
           } cursor-pointer`}
         >
           <CiHome size={25} />
         </li>
-        <li
+        {/* <li
           onClick={() => handleIsActiveHover("User")}
           className={`${
-            isActive === "User" ? "primaryButton" : "secondaryButton"
+            isActive === "User" ? "selectedSidebarButton" : "sidebarButton"
           } cursor-pointer`}
         >
           <CiUser size={25} />
-        </li>
-        <li
+        </li> */}
+        {/* <li
           onClick={() => handleIsActiveHover("Edit")}
           className={`${
-            isActive === "Edit" ? "primaryButton" : "secondaryButton"
+            isActive === "Edit" ? "selectedSidebarButton" : "sidebarButton"
           } cursor-pointer`}
         >
           <CiEdit size={25} />
-        </li>
+        </li> */}
         <li
           onClick={() => handleIsActiveHover("Products")}
           className={`${
-            isActive === "Products" ? "primaryButton" : "secondaryButton"
+            isActive === "Products" ? "selectedSidebarButton" : "sidebarButton"
           } cursor-pointer`}
         >
           <CiPenpot size={25} />
         </li>
-        <li
+        {/* <li
           onClick={() => handleIsActiveHover("Shipping")}
           className={`${
-            isActive === "Shipping" ? "primaryButton" : "secondaryButton"
+            isActive === "Shipping" ? "selectedSidebarButton" : "sidebarButton"
           } cursor-pointer`}
         >
           <BsGraphUpArrow size={25} />
@@ -57,16 +57,16 @@ const SideBarDashBoard = ({ isActive, handleIsActiveHover }) => {
         <li
           onClick={() => handleIsActiveHover("Settings")}
           className={`${
-            isActive === "Settings" ? "primaryButton" : "secondaryButton"
+            isActive === "Settings" ? "selectedSidebarButton" : "sidebarButton"
           } cursor-pointer`}
         >
           <CiSettings size={25} />
-        </li>
+        </li> */}
       </ul>
 
       <div
         onClick={handleLogout}
-        className="secondaryButton cursor-pointer hidden  w-fit self-center md:inline"
+        className="sidebarButton cursor-pointer hidden  w-fit self-center md:inline"
       >
         <RiLogoutCircleRLine size={25} />
       </div>
