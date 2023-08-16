@@ -13,7 +13,7 @@ const SideBarDashBoard = ({ isActive, handleIsActiveHover }) => {
             <img src={logo} alt="" className="imagenlogo" />
           </Link>
         </div> */}
-      <ul className="sticky bottom-0 left-0 flex md:flex-col justify-evenly items-center gap-y-4 ">
+      <ul className="sticky bottom-0 left-0 flex md:flex-col justify-evenly items-center gap-y-4 gap-x-6 ">
         <li
           onClick={() => handleIsActiveHover("Home")}
           className={`${
