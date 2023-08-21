@@ -20,11 +20,26 @@ const products = [
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
   },
+  {
+    id: "4",
+    name: "jc",
+    price: "100",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+  },
+  {
+    id: "5",
+    name: "jc",
+    price: "100",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+  },
+
 ];
 
 const ProductsDashboard = ({ clientAdmin }) => {
   return (
-    <section className="w-full h-full pt-[140px] px-2 flex flex-col items-start gap-y-5  box-border">
+    <section className="w-full h-full mt-[150px] px-2 flex flex-col items-start gap-y-5  box-border overflow-hidden">
       <header className="w-full md:flex  items-center justify-center  gap-y-5 gap-x-5 ">
         <div className="box w-full h-fit md:w-fit md:h-full flex flex-col justify-center items-center m-2">
           <span className="font-bold">Productos Totales</span>
@@ -50,7 +65,7 @@ const ProductsDashboard = ({ clientAdmin }) => {
           placeholder="Buscar producto"
         />
       </nav>
-      <div className="box w-full ">
+      <div className="box w-full overflow-y-auto ">
         <ul className="w-full bg-[#D9D9D9] rounded-md p-3 flex flex-col gap-y-4 justify-center ">
           {products?.map((product,i) => (
             <li
