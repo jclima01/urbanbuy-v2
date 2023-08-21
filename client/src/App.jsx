@@ -7,7 +7,7 @@ import Singin from "./pages/Singin/Singin";
 function App() {
   const { pathname } = useLocation();
   return (
-    <div className="w-full h-full flex justify-between items-center flex-col text-gray-300 font-sans">
+    <div className="w-full h-full flex justify-between items-center flex-col text-gray-300 font-sans ">
       {pathname !== "/dashboard" &&
         pathname !== "/login" &&
         pathname !== "/singin" && <NavHomePage />}
