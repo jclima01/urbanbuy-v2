@@ -4,6 +4,7 @@ import Homepage from "./pages/HomePage/Homepage";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Singin from "./pages/Singin/Singin";
+import AuthContextProvider from "./context/Auth";
 function App() {
   const { pathname } = useLocation();
   return (
@@ -11,12 +12,14 @@ function App() {
       {pathname !== "/dashboard" &&
         pathname !== "/login" &&
         pathname !== "/singin" && <NavHomePage />}
-      <Routes>
-        <Route path="/" element={<Homepage />}></Route>
-        <Route path="/dashboard" element={<Dashboard />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/singin" element={<Singin />}></Route>
-      </Routes>
+      <AuthContextProvider>
+        <Routes>
+          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/dashboard" element={<Dashboard />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/singin" element={<Singin />}></Route>
+        </Routes>
+      </AuthContextProvider>
     </div>
   );
 }
