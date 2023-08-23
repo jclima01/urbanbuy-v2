@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/Auth";
 
 const Login = () => {
@@ -16,8 +16,7 @@ const Login = () => {
   };
 
   const { setLocalStorageUser, auth } = useContext(AuthContext);
-
-  const { status } = auth;
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -27,8 +26,7 @@ const Login = () => {
     );
 
     setLocalStorageUser(res.data);
-
-    status === "authenticated" ? (window.location = "/dashboard") : (window.location = "/login");
+    auth ? navigate("/dashboard") : navigate("/login");
   };
 
   return (

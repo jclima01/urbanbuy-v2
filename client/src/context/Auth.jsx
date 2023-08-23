@@ -5,8 +5,8 @@ export const AuthContext = createContext();
 // eslint-disable-next-line react/prop-types
 const AuthContextProvider = ({ children }) => {
   // Initial Provider State
-  const [auth, setAuth] = useState(JSON.parse( localStorage.getItem("session")) || null);
-
+  const [auth, setAuth] = useState(JSON.parse( localStorage.getItem("session")) || {});
+  
     const setLocalStorageUser = (values) => {
 
         localStorage.setItem('session', JSON.stringify(values))
