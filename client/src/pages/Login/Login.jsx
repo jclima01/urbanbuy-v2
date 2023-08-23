@@ -1,10 +1,8 @@
-import axios from "axios";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../context/Auth";
-
+import { authLogin } from "../../redux/actions/auth";
+import { useSelector, useDispatch } from "react-redux";
 const Login = () => {
-
   const [dataUser, seData] = useState({
     email: "",
     password: "",
@@ -15,19 +13,13 @@ const Login = () => {
       [e.target.name]: e.target.value,
     });
   };
-
-  const { setLocalStorageUser, auth } = useContext(AuthContext);
+  const clientAdmin = useSelector((state) => state.clientAdmin);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const res = await axios.post(
-      "http://localhost:2800/clientAdmin/login",
-      dataUser
-    );
-
-    setLocalStorageUser(res.data);
-    auth ? navigate("/dashboard") : navigate("/login");
+    dispatch(authLogin(dataUser.email, dataUser.password));
+    clientAdmin ? navigate("/dashboard") : navigate("/login");
   };
 
   return (

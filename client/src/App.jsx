@@ -5,6 +5,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Singin from "./pages/Singin/Singin";
 import AuthContextProvider from "./context/Auth";
+
 function App() {
   const { pathname } = useLocation();
   return (
