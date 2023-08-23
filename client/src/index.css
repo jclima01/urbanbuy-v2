@@ -7,18 +7,35 @@
     @apply text-[#FFFFFF] bg-[#B26E07] px-4 py-1 rounded-md shrink-0 text-center w-fit;
   }
   .secondaryButton {
+    @apply text-[#FFFFFF] bg-[#323131] px-4 py-1 rounded-md shrink-0 text-center w-fit;
+  }
+
+  .selectedSidebarButton {
+    @apply text-[#FFFFFF] bg-[#B26E07] px-4 py-1 rounded-md shrink-0 text-center w-fit;
+  }
+  .sidebarButton {
     @apply text-[#FFFFFF] bg-[transparent] border-b-2 px-4 py-1 rounded-md shrink-0 text-center w-fit;
   }
+
   .loginButton {
     @apply text-[#FFFFFF] bg-[#939F88] border-b-2 px-4 py-1 rounded-md shrink-0 text-center w-fit;
   }
+
+  .box {
+    @apply box-border shadow-md shadow-[#B26E07] border-solid px-4 py-1 rounded-md shrink-0 text-center;
+  }
+  .searchInput {
+    @apply box-border bg-[#D9D9D9] border-solid px-4 py-1 rounded-md shrink-0 text-start w-fit;
+  }
+
   .customBackground {
-    background: no-repeat center url('./assets/image1.svg');
+    background: no-repeat center url("./assets/image1.svg");
     width: 100%;
     height: 400px;
   }
+
   .customBackground2 {
-    background: no-repeat center url('./assets/image2.svg');
+    background: no-repeat center url("./assets/image2.svg");
     width: 100%;
     height: 400px;
   }

@@ -16,18 +16,18 @@ const Dashboard = () => {
   return (
     <div className="w-full h-screen">
       <NavbarDashboard />
-      <main className="w-full h-full flex flex-col-reverse md:flex-row text-gray-900 gap-x-2">
+      <main className="w-full h-full flex-grow flex flex-col-reverse md:flex-row text-gray-900 gap-x-2">
         <SideBarDashBoard
           isActive={isActive}
           setIsActive={setIsActive}
           handleIsActiveHover={handleIsActiveHover}
         />
         {isActive === "Home" && <HomeDashboard />}
-        {isActive === "User" && <UsersDashboard />}
-        {isActive === "Edit" && <EditDashboard />}
+        {/* {isActive === "User" && <UsersDashboard />} */}
+        {/* {isActive === "Edit" && <EditDashboard />} */}
         {isActive === "Products" && <ProductsDashboard />}
-        {isActive === "Shipping" && <ShippingDashboard />}
-        {isActive === "Settings" && <SettingsDashboard />}
+        {/* {isActive === "Shipping" && <ShippingDashboard />} */}
+        {/* {isActive === "Settings" && <SettingsDashboard />} */}
       </main>
     </div>
   );
