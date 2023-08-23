@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 
 const Login = () => {
+  
   return (
     <main className="relative w-full  h-screen flex flex-col items-center justify-evenly  box-border bg-[#323131] ">
       <div className="customBackground2 flex flex-col items-center justify-center ">
