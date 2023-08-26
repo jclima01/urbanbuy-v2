@@ -16,7 +16,7 @@ const Dashboard = () => {
   return (
     <div className="w-full h-screen">
       <NavbarDashboard />
-      <main className="w-full h-full flex-grow flex flex-col-reverse md:flex-row text-gray-900 gap-x-2">
+      <main className="w-full h-full flex  justify-between flex-col-reverse md:flex-row text-gray-900 gap-x-2">
         <SideBarDashBoard
           isActive={isActive}
           setIsActive={setIsActive}
