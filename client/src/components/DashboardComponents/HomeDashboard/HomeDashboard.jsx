@@ -21,7 +21,6 @@ const HomeDashboard = () => {
           <button className="primaryButton">Agregar</button>
         </div>
       </div>
-      <section></section>
     </main>
   );
 };
